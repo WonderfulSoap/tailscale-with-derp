@@ -6,7 +6,7 @@ echo "the latest version of tailscale is $latest_version"
 
 dockerhub_tags=$(curl -s https://registry.hub.docker.com/v2/repositories/wondersoap/tailscale-with-derp/tags)
 if [[ "$dockerhub_tags" == *"$latest_version"* ]]; then
-    echo "version $latest_version already built adn pushed to docker hub. finish"
+    echo "version $latest_version already built and pushed to docker hub. finish"
     exit
 fi
 
