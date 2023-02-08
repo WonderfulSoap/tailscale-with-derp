@@ -1,6 +1,3 @@
-apt update
-apt install jq -y
-
 latest_version=$(curl -s  https://api.github.com/repos/tailscale/tailscale/releases/latest | jq -r .tag_name)
 echo "the latest version of tailscale is $latest_version"
 
