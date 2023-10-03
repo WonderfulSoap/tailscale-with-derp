@@ -12,4 +12,3 @@ echo $DOCKER_HUB_TOKEN | docker login -u wondersoap --password-stdin
 docker build . --build-arg LATEST_VERSION=$latest_version -t wondersoap/tailscale-with-derp:$latest_version -t wondersoap/tailscale-with-derp:latest
 docker push wondersoap/tailscale-with-derp:$latest_version
 docker push wondersoap/tailscale-with-derp:latest
-
