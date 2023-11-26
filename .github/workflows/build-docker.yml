@@ -20,3 +20,4 @@ jobs:
           echo "start build docker image"
           bash build.sh
           echo "finished"
+
