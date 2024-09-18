@@ -4,6 +4,9 @@ name: build tailscae with derp image
 
 # Controls when the workflow will run
 on:
+  push:
+    branches:
+    - main
   schedule:
     - cron:  '0 0 * * *' # run crontab every day 00:00
 
